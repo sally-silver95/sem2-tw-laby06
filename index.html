@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sem-2-tw-laby06/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tw-lab5</title>
+    <script type="module" crossorigin src="/sem-2-tw-laby06/assets/index-BxAcfrAu.js"></script>
+    <link rel="stylesheet" crossorigin href="/sem-2-tw-laby06/assets/index-BJxOs7u-.css">
+  </head>
+  <body class="max-w-3xl mx-auto p-8 bg-gray-50 text-gray-800">
+    <h1 class="text-4xl text-blue-600 font-bold mb-6">Ryby, nie-ryby i co tam sobie napiszesz</h1>
+      <select id="sortowanie" class="bg-blue-100 border-gray-300 rounded-lg shadow-md p-2 mt-2 mb-4">
+        <option value="created_at.asc">po dacie rosnąco</option>
+        <option value="created_at.desc">po dacie malejąco</option>
+        <option value="title.asc">po nazwie alfabetycznie</option>
+      </select>
+    <div id="app"></div>
+    <h2 class="text-2xl font-bold text-blue-600 mt-8 mb-4">Dodaj nowy artykuł</h2>
+      <form id="formularz" class="bg-blue-50 border border-gray-200 rounded-xl shadow-md p-6 flex flex-col gap-3">
+        <input id="title" type="text" placeholder="Tytuł" class="border border-gray-300 rounded-lg p-2"/>
+        <input id="subtitle" type="text" placeholder="Podtytuł" class="border border-gray-300 rounded-lg p-2"/>
+        <input id="author" type="text" placeholder="Autor" class="border border-gray-300 rounded-lg p-2"/>
+        <textarea id="content" placeholder="Treść" class="border border-gray-300 rounded-lg p-2"></textarea>
+        <input id="created_at" type="datetime-local" class="border border-gray-300 rounded-lg p-2"/>
+        <button type="submit" class="bg-blue-600 text-white rounded-lg p-2 font-medium hover:bg-blue-700">Dodaj</button>
+      </form>  
+  </body>
+</html>
