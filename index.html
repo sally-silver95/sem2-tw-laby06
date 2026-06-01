@@ -14,6 +14,11 @@
       <button id="close" class="absolute top-1 right-2">x</button>
       <p id="message" class="text-red-600"></p>
     </dialog>
+      <select id="sortowanie">
+        <option value="created_at.asc">po dacie rosnąco</option>
+        <option value="created_at.desc">po dacie malejąco</option>
+        <option value="title.asc">po nazwie alfabetycznie</option>
+      </select>
     <div id="app"></div>
     <h2>Dodaj nowy artykuł</h2>
       <form id="formularz">
@@ -21,6 +26,7 @@
         <input id="subtitle" type="text" placeholder="Podtytuł" />
         <input id="author" type="text" placeholder="Autor" />
         <textarea id="content" placeholder="Treść"></textarea>
+        <input id="created_at" type="datetime-local" />
         <button type="submit">Dodaj</button>
       </form>  
     <script type="module" src="/src/main.js"></script>

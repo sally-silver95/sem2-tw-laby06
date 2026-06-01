@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
-    "dayjs": "^1.11.20",
+    "dayjs": "^1.11.21",
+    "days": "^1.1.1",
     "tailwindcss": "^4.3.0"
   }
 }
